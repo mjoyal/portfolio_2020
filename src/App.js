@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import Nav from './components/Nav';
+import Project from './components/Project';
+import Footer from './components/Footer';
 import './App.css';
+let temp = "A food ordering experience for a single restaurant (Taco Takeout).";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav/>
+      <Project
+        title={"Taco Takeout"}
+        paragraph={temp}
+        techStack={"Express, Node.js, jQuery, EJS, SCSS"}
+      />
+      <Footer/>
+    </>
   );
 }
 
