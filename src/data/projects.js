@@ -93,7 +93,7 @@ const projects = [
     desc: notatorDescription,
     stack: notatorStack, 
     image: '', 
-    link: 'https://github.com/mjoyal/tweeter'
+    link: ''
   }, 
 
   {

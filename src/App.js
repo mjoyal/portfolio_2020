@@ -13,6 +13,7 @@ function App() {
         title={project.title}
         desc={project.desc}
         techStack={project.stack}
+        link={project.link}
       />
     );
   });
