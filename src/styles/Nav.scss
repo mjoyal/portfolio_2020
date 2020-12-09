@@ -1,0 +1,28 @@
+@import 'partials/_variables'; 
+@import 'partials/_helpers'; 
+
+
+nav {
+  @include flex(row, space-between); 
+  
+  a {
+    text-decoration: none;
+    margin: $small-space;
+    h1 {
+      color: $main-blue;
+      span {
+        color: $main-orange;
+      }
+    }
+  }
+
+  ul {
+    @include flex(row);
+    list-style-type: none;
+    li {
+      a {
+        color: $main-black;
+      }
+    }
+  }
+}

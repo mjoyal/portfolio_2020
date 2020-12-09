@@ -1,0 +1,8 @@
+@import 'partials/_variables'; 
+@import 'partials/_helpers'; 
+
+header {
+  @include flex(row, space-around);
+  color: $main-blue; 
+  margin: $small-space; 
+}

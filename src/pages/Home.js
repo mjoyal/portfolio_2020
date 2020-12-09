@@ -1,7 +1,12 @@
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import Project from '../components/Project';
+import Header from '../components/Header';
+
+// temp data
+
 import projects from '../data/projects';
+
 
 export default function Home (props) {
   
@@ -19,6 +24,7 @@ export default function Home (props) {
   return (
     <>
     <Nav/>
+      <Header></Header>
       <main>
         {projectCard}
       </main>
