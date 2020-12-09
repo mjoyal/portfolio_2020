@@ -1,5 +1,13 @@
+
+
+
 export default function Nav (props) {
   return (
-    <h1>Here is my Nav</h1>
+    <>
+    <a href="/"><h1>MACKENZIE JOYAL</h1></a>
+    <a href="/">download_resume</a>
+    <a href="/">endorsements</a>
+    <a href="/">contact</a>
+    </>
   );
 }

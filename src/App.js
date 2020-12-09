@@ -1,31 +1,19 @@
-import Nav from './components/Nav';
-import Project from './components/Project';
-import Footer from './components/Footer';
-import projects from './data/projects';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
+import Home from './pages/Home';
 
 function App() {
 
-  const projectCard = projects.map((project) => {
-    return (
-      <Project
-        title={project.title}
-        desc={project.desc}
-        techStack={project.stack}
-        link={project.link}
-      />
-    );
-  });
-
   return (
-    <>
-      <Nav/>
-      <main>
-        {projectCard}
-      </main>
-      <Footer/>
-    </>
+    <Router>
+      <Route exact path="/">
+       <Home/>
+      </Route>
+    </Router>
   );
 }
 
