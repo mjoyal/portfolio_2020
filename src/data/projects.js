@@ -3,12 +3,12 @@ const tacoDescription =
 Customers can visit this website, select one or more dishes and 
 place an order for pick-up. They will receive a text notification 
 when their order is ready.
-
+\n
 When an order is placed the restaurant receives the order via SMS. 
 The restaurant can then specify how long it will take to fulfill 
 it via the admin screen. Once they provide this information, the 
 website updates for the client and also notifies them via SMS.
-
+\n
 This app uses the Twilio API service to implement SMS 
 commuication from the website to the customer and restaurant.`;
 
@@ -19,7 +19,7 @@ const schedulerDescription =
 `Scheduler is a React based application that makes scheduling 
 interview appointments easy & fun! Add, edit and delete appointments 
 easily for any day of the week. 
-
+\n
 Enter the name of the student and select an instructor. Form 
 validation will stop any requests to the database if there is no 
 student name entered or interview selected. If there are errors saving 
@@ -33,7 +33,7 @@ submit new tweets which will immediately make a request to the server
 and render the tweet on the page in reverse-chronological order. 
 The tweet history will show tweets with a user name and avatar, the 
 tweet content, and display the time elapsed since the tweet was posted. 
-
+\n
 The single-page app is optimized for desktop and tablet views. The 
 navigation contains an animated button that will hide and show the 
 textarea that creates new tweets. The textarea will be focused when 
@@ -101,8 +101,6 @@ const projects = [
     image: 'images/tweeter-project.png', 
     link: 'https://github.com/mjoyal/tweeter'
   }, 
-
-
 
 ]
 

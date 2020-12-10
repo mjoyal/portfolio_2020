@@ -5,6 +5,7 @@ article {
   @include flex(row); 
   margin: $large-space; 
   color: $main-blue;
+  text-transform: lowercase;
   .project-image {
     margin: $med-space; 
     max-width: 15%;

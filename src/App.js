@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 
 import Home from './pages/Home';
+import "./styles/Global.scss";
 
 function App() {
 
