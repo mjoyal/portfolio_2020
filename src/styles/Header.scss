@@ -5,4 +5,10 @@ header {
   @include flex(row, space-around);
   color: $main-blue; 
   margin: $small-space; 
+  h2 {
+    text-align: center;
+  }
+  img {
+    max-width: 40%; 
+  }
 }

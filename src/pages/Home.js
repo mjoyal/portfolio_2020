@@ -17,6 +17,7 @@ export default function Home (props) {
         desc={project.desc}
         techStack={project.stack}
         link={project.link}
+        image={project.image}
       />
     );
   });

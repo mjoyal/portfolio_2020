@@ -65,7 +65,7 @@ const projects = [
     title: "Taco Takeout", 
     desc: tacoDescription,
     stack: tacoStack, 
-    image: '', 
+    image: 'images/taco.png', 
     link: 'https://github.com/mjoyal/taco-takeout'
   },
 
