@@ -2,6 +2,16 @@
 @import 'partials/_helpers'; 
 
 body {
-  background-color: #f8f8ff01;
+  background-color: white;
   color: $main-blue; 
+  h1, h2 ,h3 {
+    font-family: input-mono-compressed, monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+  p, a {
+    font-family: input-mono-compressed, monospace;
+    font-weight: 300;
+    font-style: normal;
+  }
 }

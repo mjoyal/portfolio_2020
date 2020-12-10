@@ -12,7 +12,7 @@ export default function Project (props) {
       <div className="space">
         <h1>{props.title}</h1>
         <div className="underline"></div>
-        <div>{paragraphs}</div>
+        <p>{props.desc}</p>
         <h3><span>{"{"}</span> Stack <span>{"}"}</span></h3>
         <p>{props.techStack}</p>
         <a href={props.link} target="_blank">
