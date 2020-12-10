@@ -59,51 +59,51 @@ bread. Vinyl retro celiac man bun, pitchfork try-hard authentic XOXO`;
 const gameStack = `React, Rails, SCSS`;
 
 const projects = [
-
   {
     id: 1, 
-    title: "Taco Takeout", 
-    desc: tacoDescription,
-    stack: tacoStack, 
-    image: 'images/taco.png', 
-    link: 'https://github.com/mjoyal/taco-takeout'
+    title: "The CrewlyWed Game", 
+    desc: gameDescription,
+    stack: gameStack, 
+    image: 'images/crewly-project.png', 
+    link: ''
   },
 
   {
     id: 2, 
+    title: "Taco Takeout", 
+    desc: tacoDescription,
+    stack: tacoStack, 
+    image: 'images/taco-project.png', 
+    link: 'https://github.com/mjoyal/taco-takeout'
+  },
+  {
+    id: 3, 
+    title: "The Notator", 
+    desc: notatorDescription,
+    stack: notatorStack, 
+    image: 'images/notator-project.png', 
+    link: ''
+  }, 
+  {
+    id: 4, 
     title: "Interview Scheduler", 
     desc: schedulerDescription,
     stack: schedulerStack, 
-    image: '', 
+    image: 'images/scheduler-project.png', 
     link: 'https://github.com/mjoyal/scheduler'
   }, 
 
   {
-    id: 3, 
+    id: 5, 
     title: "Tweeter", 
     desc: tweeterDescription,
     stack: tweeterStack, 
-    image: '', 
+    image: 'images/tweeter-project.png', 
     link: 'https://github.com/mjoyal/tweeter'
   }, 
 
-  {
-    id: 4, 
-    title: "The Notator", 
-    desc: notatorDescription,
-    stack: notatorStack, 
-    image: '', 
-    link: ''
-  }, 
 
-  {
-    id: 5, 
-    title: "The CrewlyWed Game", 
-    desc: gameDescription,
-    stack: gameStack, 
-    image: '', 
-    link: ''
-  }
+
 ]
 
 export default projects; 
