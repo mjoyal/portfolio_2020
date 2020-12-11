@@ -2,7 +2,7 @@
 @import 'partials/_helpers'; 
 
 footer {
-  @include flex()
+  @include flex();
   h2 {
     color: white; 
   }
