@@ -5,9 +5,22 @@ header {
   @include flex(row, space-around);
   color: $main-blue; 
   margin: $small-space; 
-  h2 {
+  div {
+    margin: $small-space; 
     text-align: center;
+  .arrow {
+    margin: 0 $small-space; 
+    max-width: 1.25rem; 
+   }
+   .cursor {
+    margin: 0 $small-space; 
+    max-width: 0.75rem; 
+    }
   }
+  h2 {
+    display: inline; 
+  }
+
   img {
     max-width: 40%; 
   }
