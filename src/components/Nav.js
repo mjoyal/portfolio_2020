@@ -10,6 +10,7 @@ export default function Nav (props) {
       {/* <li><a href="/">endorsements</a></li> */}
       <li><a href="/">contact</a></li>
     </ul>
+    <img src="images/hamburger-button.png" alt="menu button"/>
     </nav>
   );
 }

@@ -25,3 +25,12 @@ header {
     max-width: 40%; 
   }
 }
+
+@media screen and (max-width: 480px) {
+  header {
+    @include flex(column-reverse, space-around);
+    img {
+      max-width: 70%; 
+    }
+  }
+}

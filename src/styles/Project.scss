@@ -36,3 +36,29 @@ article {
     }
   }
 }
+
+header {
+  .small-project-image {
+    display: none; 
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  article {
+    margin: $med-space;
+    .project-image {
+      display: none;
+    }
+  }
+
+  .project-header {
+    @include flex(row, space-between);
+    margin: 0; 
+    .small-project-image {
+      display: flex; 
+      max-width: 5rem;
+    }
+  }
+}

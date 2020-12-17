@@ -26,4 +26,21 @@ nav {
       }
     }
   }
+
+  img {
+    display: none; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    img {
+      display: flex; 
+      max-width: 2.5rem; 
+      margin: $small-space;
+    }
+    ul {
+      display: none; 
+    }
+  }
 }

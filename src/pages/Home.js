@@ -7,10 +7,6 @@ import Header from '../components/Header';
 import {useEffect, useState} from 'react'; 
 import axios from 'axios';
 
-// temp data
-
-// import projects from '../data/projects';
-
 
 export default function Home (props) {
   const [loading, setLoading] = useState(true); 
@@ -46,6 +42,7 @@ export default function Home (props) {
     <Nav/>
       <Header></Header>
       <main>
+        <h2>projects</h2>
         {projectCard}
       </main>
     <Footer/>
