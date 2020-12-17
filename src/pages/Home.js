@@ -17,7 +17,7 @@ export default function Home (props) {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get(`/projects`)
+    axios.get(`https://mjoyal-portfolio-api.herokuapp.com/projects`)
       .then((response) => {
         setProjects(response.data.projects); 
         console.log(response.data.projects); 
