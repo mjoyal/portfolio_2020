@@ -11,7 +11,16 @@ export default function Header (props) {
         dedicated to learning && enthusiastic 
         about intuitive design. 
        </h2>
-      <motion.img className="cursor" src="/images/cursor.png" alt="cursor"/>
+      <motion.img 
+        className="cursor" 
+        src="/images/cursor.png" 
+        alt="cursor"
+        // initial={{opacity: 0}}
+        // animate={{opacity: 1}}
+        // exit={{opacity: 0}}
+        // transition={{repeat: Infinity, duration: 1.5}}
+
+      />
       </div>
       <img src="images/computer-boy.png" alt="computer"/>
     </header>

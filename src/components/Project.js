@@ -2,11 +2,8 @@ import "../styles/Project.scss";
 
 export default function Project (props) {
 
-  const text = props.desc; 
-  const paragraphs = text.split('\n').map(paragraph => <p>{paragraph}</p>)
-
-
-
+  // const text = props.desc; 
+  // const paragraphs = text.split('\n').map(paragraph => <p>{paragraph}</p>)
   return (
     <article>
     <img className="project-image" src={`${props.image}`} alt="project"/>
