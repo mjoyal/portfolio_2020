@@ -19,7 +19,7 @@
 }
 
 .message {
-  position: fixed;
+  position: relative;
   z-index: 1;
   background-color: $main-pink; 
   padding: $small-space; 
