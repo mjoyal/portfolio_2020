@@ -4,10 +4,12 @@
 
 nav {
   @include flex(row, space-between); 
-  
+  .logo {
+    white-space: nowrap;
+  }
   a {
     text-decoration: none;
-    margin: $small-space;
+    margin: 0 $small-space;
     h1 {
       color: $main-blue;
       span {

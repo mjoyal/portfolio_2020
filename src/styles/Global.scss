@@ -14,5 +14,15 @@ body {
     font-weight: 300;
     font-style: normal;
   }
+  .project-title {
+    color: $main-orange; 
+    margin: $small-space; 
+    font-size: 2rem; 
+  }
 }
 
+main {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,46 @@
+@import 'partials/_variables'; 
+@import 'partials/_helpers'; 
+
+.sidenav {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: width 0.5s;
+  padding-top: 60px;
+  text-align: center;
+
+  ul {
+    list-style-type: none;
+    padding: 0; 
+    li {
+      margin: $med-space; 
+    }
+  }
+  a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: $main-blue; 
+  }
+  img {
+    max-width: 20%;
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    margin: $small-space; 
+    border: none; 
+    background-color: white;
+    font-size: 2rem;
+    color: $main-orange; 
+  }
+}

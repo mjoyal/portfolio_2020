@@ -20,7 +20,6 @@ header {
   h2 {
     display: inline; 
   }
-
   img {
     max-width: 40%; 
   }
@@ -32,5 +31,16 @@ header {
     img {
       max-width: 70%; 
     }
+    h2 {
+      font-size: 1.25rem; 
+    }
+    .arrow {
+      margin: 0 $small-space; 
+      max-width: 0.25rem; 
+     }
+     .cursor {
+      margin: 0 $small-space; 
+      max-width: 0.5rem; 
+      }
   }
 }

@@ -2,6 +2,7 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import Project from '../components/Project';
 import Header from '../components/Header';
+import Sidebar from '../components/Sidebar';
 
 
 import {useEffect, useState} from 'react'; 
@@ -11,6 +12,7 @@ import axios from 'axios';
 export default function Home (props) {
   const [loading, setLoading] = useState(true); 
   const [projects, setProjects] = useState([]);
+  const [sideBar, setSideBar] = useState(false); 
 
   useEffect(() => {
     axios.get(`https://mjoyal-portfolio-api.herokuapp.com/projects`)
@@ -20,6 +22,14 @@ export default function Home (props) {
         setLoading(false); 
       });
   }, []); 
+
+  const handleOpen = () => {
+    setSideBar(true); 
+  };
+
+  const handleClose = () => {
+    setSideBar(false); 
+  };
 
   if(loading) {
     return null; 
@@ -39,10 +49,11 @@ export default function Home (props) {
   
   return (
     <>
-    <Nav/>
+    {sideBar && <Sidebar close={handleClose}/>}
+    <Nav open={handleOpen}/>
       <Header></Header>
       <main>
-        <h2>projects</h2>
+        <h2 className="project-title">my projects</h2>
         {projectCard}
       </main>
     <Footer/>

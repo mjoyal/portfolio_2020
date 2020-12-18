@@ -8,7 +8,7 @@ export default function Header (props) {
       <div>
       <img className="arrow" src="/images/terminal-arrow.png" alt="cursor"/>
        <h2>
-        Passionate full-stack web developer, 
+        Passionate full-stack developer, 
         dedicated to learning && enthusiastic 
         about intuitive design. 
        </h2>
