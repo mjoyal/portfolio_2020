@@ -14,5 +14,10 @@ footer {
       margin: $small-space; 
     }
   }
+}
 
+.email-hide {
+  position:fixed;
+  left:-100em;
+  top:100rem;
 }
