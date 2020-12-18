@@ -3,9 +3,11 @@ import "../styles/Message.scss";
 
 export default function Message (props) {
   return (
-    <article>
-      <h3>My email mackenzie.joyal@gmail.com has been copied to your clipboard!</h3>
-      <button>x</button>
-    </article>
+    <div className="modal">
+      <article className="message">
+        <h3>mackenzie.joyal@gmail.com has been copied to your clipboard!</h3>
+        <button onClick={props.closeMessage}>x</button>
+      </article>
+    </div>
   );
 }

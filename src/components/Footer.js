@@ -11,7 +11,7 @@ export default function Footer (props) {
         <a href={"https://www.linkedin.com/in/mackenziejoyal/"} target="_blank">
         <img src="images/linkedin-white.png" alt="linkedin icon"/>
         </a>
-        <img src="images/email-white.png" alt="email icon"/>
+        <img src="images/email-white.png" alt="email icon" onClick={props.showCopied}/>
       </div>
     </footer>
   );

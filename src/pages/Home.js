@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import Project from '../components/Project';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
+import Message from '../components/Message';
 
 
 import {useEffect, useState} from 'react'; 
@@ -13,6 +14,7 @@ export default function Home (props) {
   const [loading, setLoading] = useState(true); 
   const [projects, setProjects] = useState([]);
   const [sideBar, setSideBar] = useState(false); 
+  const [showMessage, setShowMessage] = useState(false); 
 
   useEffect(() => {
     axios.get(`https://mjoyal-portfolio-api.herokuapp.com/projects`)
@@ -29,6 +31,14 @@ export default function Home (props) {
 
   const handleClose = () => {
     setSideBar(false); 
+  };
+
+  const showModal = () => {
+    setShowMessage(true);
+  };
+
+  const closeModal = () => {
+    setShowMessage(false);
   };
 
   if(loading) {
@@ -51,12 +61,13 @@ export default function Home (props) {
     <>
     {sideBar && <Sidebar close={handleClose}/>}
     <Nav open={handleOpen}/>
+    {showMessage && <Message closeMessage={closeModal}/>}
       <Header></Header>
       <main>
         <h2 className="project-title">my projects</h2>
         {projectCard}
       </main>
-    <Footer/>
+    <Footer showCopied={showModal}/>
     </>
   );
 }
