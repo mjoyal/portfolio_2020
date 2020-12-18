@@ -11,7 +11,7 @@ export default function Footer (props) {
   };
 
   return (
-    <footer>
+    <footer id="footer">
       <input ref={emailText} readOnly className="email-hide" type="text" value={'mackenzie.joyal@gmail.com'}/>
       <h2>say_hi()!</h2>
       <div>

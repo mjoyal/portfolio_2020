@@ -9,7 +9,7 @@ export default function SideBar (props) {
     <ul>
       <li><a href="documents/mackenzie-joyal-resume.pdf" target="_blank">download_resume</a></li>
       {/* <li><a href="/">endorsements</a></li> */}
-      <li><a href="/">contact</a></li>
+      <li onClick={props.close}><a href="#footer">contact</a></li>
     </ul>
     <img src="images/computer-face.png" alt="computer face logo"/>
     </motion.aside>

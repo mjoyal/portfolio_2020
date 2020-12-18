@@ -3,6 +3,7 @@
 
 footer {
   @include flex();
+  margin-top: $small-space;
   h2 {
     color: white; 
   }

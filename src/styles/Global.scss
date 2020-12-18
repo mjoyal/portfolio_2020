@@ -1,6 +1,10 @@
 @import 'partials/_variables'; 
 @import 'partials/_helpers'; 
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
   color: $main-blue; 
@@ -13,6 +17,8 @@ body {
     font-family: input-mono-compressed, monospace;
     font-weight: 300;
     font-style: normal;
+    text-decoration: none;
+    color: $main-blue;
   }
   .project-title {
     color: $main-orange; 

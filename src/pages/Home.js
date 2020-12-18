@@ -66,6 +66,7 @@ export default function Home (props) {
       <main>
         <h2 className="project-title">my projects</h2>
         {projectCard}
+        <a href="#nav">scroll to top</a>
       </main>
     <Footer showCopied={showModal}/>
     </>
