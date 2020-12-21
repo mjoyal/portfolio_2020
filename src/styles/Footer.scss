@@ -3,16 +3,18 @@
 
 footer {
   @include flex();
-  margin-top: $small-space;
+  margin-top: $med-space;
+  background-color: $main-dark-blue;
+  padding: $med-space;
   h2 {
     color: white; 
   }
-  background-color: $main-blue;
+
   div {
     @include flex(row);
     img {
-      max-width: 2rem;
-      margin: $small-space; 
+      max-width: 3rem;
+      margin: $med-space; 
     }
   }
 }

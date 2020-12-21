@@ -1,10 +1,11 @@
 @import 'partials/_variables'; 
 @import 'partials/_helpers'; 
 
-header {
+.main-header {
   @include flex(row, space-around);
   color: $main-blue; 
-  margin: $small-space; 
+  padding: $large-space $med-space; 
+  background-color: $main-dark-blue;
   div {
     margin: $small-space; 
     text-align: center;
@@ -13,20 +14,23 @@ header {
     max-width: 1.25rem; 
    }
    .cursor {
+   
     margin: 0 $small-space; 
     max-width: 0.75rem; 
     }
   }
   h2 {
+    color: white; 
     display: inline; 
   }
   img {
-    max-width: 40%; 
+    max-width: 35%; 
+    margin: $small-space;
   }
 }
 
-@media screen and (max-width: 525px) {
-  header {
+@media screen and (max-width: 800px) {
+  .main-header {
     @include flex(column-reverse, space-around);
     img {
       max-width: 70%; 

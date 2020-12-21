@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: $main-white;
   color: $main-blue; 
   h1, h2 ,h3 {
     font-family: input-mono-compressed, monospace;
@@ -22,7 +22,7 @@ body {
   }
   .project-title {
     color: $main-orange; 
-    margin: $small-space; 
+    margin-top: $large-space; 
     font-size: 2rem; 
   }
 }

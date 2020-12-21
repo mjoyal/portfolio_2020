@@ -3,13 +3,12 @@ import {motion} from 'framer-motion';
 
 export default function Header (props) {
   return (
-    <header>
+    <header className="main-header">
       <div>
       <img className="arrow" src="/images/terminal-arrow.png" alt="cursor"/>
        <h2>
-        Passionate full-stack developer, 
-        dedicated to learning && enthusiastic 
-        about intuitive design. 
+       Passionate full-stack developer, dedicated to learning and enthusiastic about intuitive design. 
+       Find me with a skateboard in one hand, craft beer in the other.
        </h2>
       <motion.img 
         className="cursor" 
