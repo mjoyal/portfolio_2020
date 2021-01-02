@@ -30,14 +30,14 @@ nav {
     }
   }
 
-  img {
+  .menuButton {
     display: none; 
   }
 }
 
 @media screen and (max-width: 525px) {
   nav {
-    img {
+    .menuButton {
       display: flex; 
       max-width: 2.5rem; 
       margin: $small-space;

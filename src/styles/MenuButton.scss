@@ -1,0 +1,27 @@
+@import 'partials/_variables'; 
+@import 'partials/_helpers'; 
+
+.menuButton {
+  @include flex(); 
+  cursor: pointer;
+  background-color: $main-dark-blue; 
+  border: none; 
+}
+
+.hamLine {
+  height: 0.25rem; 
+  width: 2rem; 
+  margin: 0.2rem 0; 
+}
+
+.hamLine1 {
+  background-color: $main-orange; 
+}
+
+.hamLine2 {
+  background-color: white; 
+}
+
+.hamLine3 {
+  background-color: $main-yellow; 
+}

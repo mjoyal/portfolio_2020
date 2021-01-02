@@ -13,12 +13,14 @@ import axios from 'axios';
 
 
 export default function Home (props) {
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(false); 
   const [projects, setProjects] = useState([]);
   const [skills, setSkills] = useState([]); 
   const [endorsements, setEndorsements] = useState([]); 
-  const [sideBar, setSideBar] = useState(false); 
+  
   const [showMessage, setShowMessage] = useState(false); 
+  // sidebar
+  const [isOpen, setIsOpen] = useState(false); 
 
   useEffect(() => {
     const baseURL = `https://mjoyal-portfolio-api.herokuapp.com`; 
@@ -37,11 +39,11 @@ export default function Home (props) {
   }, []); 
 
   const handleOpen = () => {
-    setSideBar(true); 
+    setIsOpen(true); 
   };
 
   const handleClose = () => {
-    setSideBar(false); 
+    setIsOpen(false); 
   };
 
   const showModal = () => {
@@ -51,6 +53,7 @@ export default function Home (props) {
   const closeModal = () => {
     setShowMessage(false);
   };
+
 
   if(loading) {
     return null; 
@@ -70,7 +73,7 @@ export default function Home (props) {
   
   return (
     <>
-    {sideBar && <Sidebar close={handleClose}/>}
+    <Sidebar close={handleClose} sideBarStatus={isOpen}/>
     <Nav open={handleOpen}/>
     {showMessage && <Message closeMessage={closeModal}/>}
       <Header></Header>
@@ -79,7 +82,7 @@ export default function Home (props) {
         {projectCard}
         {/* <Skills skills={skills}/>
         <Endorsements endorsements={endorsements}/> */}
-        <a href="#nav">scroll to top</a>
+        <a href="#home">scroll to top</a>
       </main>
     <Footer showCopied={showModal}/>
     </>
